@@ -21,6 +21,8 @@ body, html{
     */
     background-attachment:fixed;
   }
+
+  
   
   .pimg1{
     background-image:url('../assets/moon.jpg');
@@ -73,9 +75,22 @@ body, html{
     background-color:transparent;
     color:rgb(14, 9, 9);
   }
+  .text{
+    display: inline-block;
+    max-width:0;
+    white-space:nowrap;
+    overflow: hidden;
+    animation: escrever normal 5s steps(55) infinite;
+  }
   
   @media(max-width:568px){
     .pimg1, .pimg2, .pimg3{
       background-attachment:scroll;
+    }
+  }
+
+  @keyframes escrever{
+    100%{
+      max-width:100%;
     }
   }
